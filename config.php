@@ -52,7 +52,7 @@ $MaxPages = 10;
 //Choix des infos de connexion pour le super administrateur du CMS
 $superadmin = array(
 	'login' => 'admin', 
-	'pwd' => pwd('stumper2557'), //pwd() crypte le mot de passe en SHA512 (128 bits)
+	'pwd' => pwd('passwordstring'), //pwd() crypte le mot de passe en SHA512 (128 bits)
 	'nom' => 'Ange Chierchia'
 );
 
