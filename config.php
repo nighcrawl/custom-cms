@@ -83,6 +83,8 @@ define("DBUSER", $config['DBUSER']);
 define("DBPWD", $config['DBPWD']);
 define("MAX_PAGES", $MaxPages);
 
+define("SALT", "Random string for salt"); //sel pour le cryptage des mots de passe
+
 /*
 define("PAYPAL_USER",'ange.c_1339573946_biz@gmail.com');
 define("PAYPAL_URL","www.sandbox.paypal.com");

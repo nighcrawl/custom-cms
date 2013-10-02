@@ -97,7 +97,10 @@ function url_title($str, $separator = 'dash', $lowercase = true){
 /***
  *	retourne la chaine en paramètre cryptée sur 128 bits en SHA512 
  */
-function pwd($str){ return hash('sha512',$str); }
+function pwd($str){ 
+	$pwd = str_split($str, (strlen($str)/2)+1);
+	return hash('sha512',$str.$pwd[0].SALT.$pwd[1]);
+}
 
 /***
  *	retourne un message d'erreur, d'avertissement ou de succès
