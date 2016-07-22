@@ -389,20 +389,11 @@ textarea {
 	border: 1px solid #0071bd;
 	border-radius: 3px;
 	background: #0071bd;
-	/*background: #00ccff;
-	background: -moz-linear-gradient(top, #00ccff 0%, #0071bd);
-	background: -webkit-gradient(linear, left top, left bottom, from(#00ccff), to(#0071bd));
-	box-shadow: 0 0 0px rgba(255,255,255,0.8), 0 0 2px rgba(0,0,0,0.4);
-	text-shadow: 0px -1px 0px rgba(000,000,000,0.3), 0px 1px 0px rgba(255,255,255,0.2);*/
 	text-decoration: none;
 }
 
 [type=submit]:hover, [type=button]:hover, a.button:hover {
-	
 	background: #333;
-	/*background: #858585;
-	background: -moz-linear-gradient(top, #858585 0%, #000000);
-	background: -webkit-gradient( linear, left top, left bottom, from(#858585), to(#000000));*/
 	border: 1px solid #000000;
 }
 
@@ -465,7 +456,6 @@ form p {
 div.message { margin: 1em 0; }
 
 ul.message li { 
-	/*margin-left:1.6em;*/
 	list-style-type:none; 
 }
 
@@ -511,7 +501,6 @@ ul.message li:before {
 	margin: 0 6px 6px 0;
 	font-weight: bold;
 	font-size: 0.9em;
-	/*display:block;*/
 	text-align: center;
 }
 
@@ -1027,42 +1016,4 @@ body {
 
 .alignright {
 	float: right;
-}
-
-/* ==|== media queries ======================================================
-   PLACEHOLDER Media Queries for Responsive Design.
-   These override the primary ('mobile first') styles
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
-
-}
-
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-
-}
-
-
-
-/* ==|== print styles =======================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
- 
-@media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* h5bp.com/t */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
 }

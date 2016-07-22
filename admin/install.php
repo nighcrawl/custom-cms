@@ -250,11 +250,7 @@ else:
 		//renommer le fichier en --installed.bkp
 		echo "<h3>L'installation du CMS c'est achev&eacute;e avec succ&egrave;s.</h3>
 		<p>Le CMS a &eacute;t&eacute; install&eacute; avec les modules suivants :</p>
-		<ul>";
-		foreach($modules as $module):
-			echo "<li>".$module."</li>";
-		endforeach;
-		echo "</ul>
+		<ul><li>" . implode("</li><li>", $modules) . "</li></ul>
 		<p>Vous allez maintenant &ecirc;tre redirig&eacute; vers l'administration du site.</p>";
 		echo "<meta http-equiv='refresh' content='5;URL=index.php' />";
 		rename('install.php', $renameInstallFile);
